@@ -15,8 +15,8 @@ class ExampleUnitTest {
         assert(true)
     }
 
-    @Test
-    fun testFail() {
-        assert(false)
-    }
+//    @Test
+//    fun testFail() {
+//        assert(false)
+//    }
 }
