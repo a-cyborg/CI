@@ -1,4 +1,4 @@
-name: Setup android runner(linux)
+name: Build android
 
 on:
   workflow_call:
@@ -31,3 +31,6 @@ jobs:
             ~/.gradle/caches
             ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+
+      - name: Build android
+        run: ./gradlew build
