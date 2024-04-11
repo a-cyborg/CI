@@ -8,8 +8,4 @@ on:
 
 jobs:
   build_android:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Build android
-        uses: ./.github/workflows/ci-build-android.yml
+      uses: ./.github/workflows/ci-build-android.yml
