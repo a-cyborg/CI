@@ -8,4 +8,4 @@ on:
 
 jobs:
   build_android:
-      uses: ./.github/workflows/ci-build-android.yml
+      uses: ./.github/workflows/ci-build-sonar.yml
