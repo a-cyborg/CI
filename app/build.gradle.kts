@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("org.sonarqube") version "4.4.1.3373"
 }
 
 android {
@@ -66,4 +67,12 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "a-cyborg_CI")
+        property("sonar.organization", "a-cyborg")
+        property("sonar.host.url", "https://sonarcloud.io")
+    }
 }
